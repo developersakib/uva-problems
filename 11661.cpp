@@ -4,6 +4,8 @@
 #include <climits>
 using namespace std;
 
+char track[200002];
+
 struct road
 {
     bool found;
@@ -20,7 +22,6 @@ int main()
 
 	while(l!=0)
 	{
-		char *track = new char[l];
         road rest, drug;
 
         rest.found = drug.found = false;
@@ -29,7 +30,7 @@ int main()
         flag=flag2=false;
 
         getchar();
-        cin.getline(track, l+1);
+        scanf("%[^\n]", track);
 
         for(int i=0; i<l; i++)
         {
@@ -76,7 +77,6 @@ int main()
         else
             cout << 0 << endl;
 
-		delete track;
 		cin >> l;
 	}
 
