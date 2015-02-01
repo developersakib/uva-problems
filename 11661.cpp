@@ -26,11 +26,16 @@ int main()
 
         rest.found = drug.found = false;
         long distance, i, mini = INT_MAX;
+
+        /*
+            flag: to check if 'Z' exist.
+            flag2: to check there are pair of R and D Or Z exists. if not print out Zero
+        */
         bool flag, flag2;
         flag=flag2=false;
 
         getchar();
-        scanf("%[^\n]", track);
+        cin.getline(track, 200002);
 
         for(int i=0; i<l; i++)
         {
