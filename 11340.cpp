@@ -28,7 +28,7 @@ int main()
 		for(int i=0; i<number; i++)
 		{
 			cin >> ch >> cost;
-			// values[ ch ] = cost;
+			// Map new Character
 			if( !mymap[ch] ) mymap[ch] = cost;
 		}
 
