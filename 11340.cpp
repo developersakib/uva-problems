@@ -1,3 +1,8 @@
+/**
+	Author: Md. Nazmus Sakib
+	11340 - Newspaper
+**/
+
 #include <iostream>
 #include <cstring>
 #include <cstdio>
@@ -8,7 +13,7 @@ using namespace std;
 
 int main()
 {
-	freopen("11340.in","r", stdin);
+	// freopen("11340.in","r", stdin);
 	// freopen("11340.out","w", stdout);
 
 	int test;
@@ -18,8 +23,6 @@ int main()
 		int number, cost, total=0;
 		char ch;
 		map <char, int> mymap;
-		// int values[300];
-		// memset(values, 0, sizeof(values));
 
 		cin >> number;
 		for(int i=0; i<number; i++)
@@ -35,7 +38,7 @@ int main()
 		for(int i=0; i<number; i++)
 		{
 			getline(cin, line);
-			// int l = line.length();
+			
 			for(int j=0; line[j] != '\0'; j++)
 			{
 				//int tmp = values[ line[j] ];
