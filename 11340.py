@@ -1,3 +1,6 @@
+#
+# This Solution gets TLE on UVA
+# 
 
 tests = int(input())
 #file = open("out.txt", "w")
